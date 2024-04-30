@@ -7,6 +7,7 @@ namespace SimpleCalculator.Models
         static string error = "The field SecondNumber must be greater than 0.";
         public decimal FirstNumber { get; set; }
         [Required(ErrorMessage = "Second number is required.")]
+
         [ZeroNotAllowed]
         public decimal SecondNumber { get; set; }
 
