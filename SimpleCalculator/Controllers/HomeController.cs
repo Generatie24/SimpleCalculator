@@ -23,6 +23,7 @@ namespace SimpleCalculator.Controllers
             }
             else
             {
+                @ViewBag.ErrorMessage = "There is a problem in your calculation";
                 ViewBag.Result = 0;
             }
 

@@ -1,7 +1,7 @@
 ﻿@model SimpleCalculator.Models.Calculator
 
 <div class="alert alert-success alert-dismissible fade show" role="alert">
-    <strong>Our Web app is great!</strong>
+    <strong>@ViewBag.ErrorMessage</strong>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 <div class="row">
@@ -24,7 +24,6 @@
                 <input value="@ViewBag.Result" readonly class="form-control col-3" />
             </div>
             <div class="form-group">
-                <input type="submit" asp-action="index" class="btn btn-primary" />
                 <button type="submit" name="operation" value="Add" class="btn btn-primary">Add</button>
                 <button type="submit" name="operation" value="Mul" class="btn btn-primary">Multiply</button>
                 <button type="submit" name="operation" value="Sub" class="btn btn-primary">Subtract</button>
