@@ -19,7 +19,8 @@ namespace SimpleCalculator.Controllers
 
             if (ModelState.IsValid)
             {
-                ViewBag.Result = model.Calculate(operation);
+                decimal result = model.Calculate(operation); 
+                ViewBag.Result = result.ToString("C");
             }
             else
             {
